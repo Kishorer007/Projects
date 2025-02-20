@@ -1,57 +1,80 @@
-body{
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #000; */
+    color: #fff;
     margin: 0;
     padding: 0;
-    background-color: rgb(0, 0, 0);
-   
+    text-align: center;
+    background-image: url(../Images/image.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /* background-color: #111; */
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+section {
+    padding: 50px;
 }
 
-.container_main{
-    background-image: url(../images/image.png);
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 500px;
-    padding: 10px;
-}
-
-.nav-item{
-    align-items: end;
-}
-
-.nav-link{
-    color: rgb(255, 255, 255);
- 
- &:hover{
-        color: rgb(182, 255, 12);
-    }
-}
-
-.intro{
-    width: 700px;
-    margin: auto;
-    margin-top: 120px;
-    color: rgb(255, 255, 255);
-    p{
-        text-align: justify;
-    }
-}
-
-.card{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    width: 18rem
-}
-
-.container{
+#projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    gap: 20px;
+    justify-content: center;
+
 }
 
-.col{
-    flex: none !important;
+.project {
+    /* background-color: #222; */
+    padding: 20px;
+    margin: 20px auto;
+    width: 25%;
+    border-radius: 8px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+input, textarea, button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+button {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+footer {
+    /* background-color: #111; */
+    padding: 20px;
 }
 
-
-
-
+.resume {
+    margin-top: 20px;
+}
+.resume a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
